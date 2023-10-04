@@ -1,29 +1,26 @@
 body {
-  font-family: Helvetica, sans-serif;
-  padding: 30px;
+  font-family: 'Fira Code', monospace;
+  background: #131425;
   color: #333;
-  /* backrground-image: url(''); */
-  background-position: center;
-  background: #e96443;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #904e95, #e96443);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #904e95, #e96443); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  padding: 30px; 
 }
 
 .app {
   max-width: 600px;
   margin: 0 auto 300px;
-  background-color: rgb(245, 245, 245);
+  background-color: #131425;
   padding: 1.5em;
-  border-radius: 10px;
-  
+  border: 2px solid #03A696;
 }
 
 h1 {
+  color: #3BD9BC;
   margin-top: 0px;
   text-align: center;
 }
 
 h2 {
+  color: #3BD9BC;
   margin-bottom: 10px;
 }
 
@@ -32,32 +29,54 @@ p {
   font-weight: 600;
 }
 
-input {
-  box-sizing: border-box;
-}
-
 button {
-  background-color: #904e95;
-  color: white;
-  padding: 5px 10px;
+  font-weight: 600;
+  background-color: #3BD9BC;
+  color: #131425;
+  font-weight: 800;
+  padding: 10px 15px;
   border: none;
-  border-radius: 3px;
+  border-radius: 2px;
   cursor: pointer;
-  opacity: 0.8;
   transition: .3s;
-  margin: 5px;
-}
-
-.complete {
-  background-color: green;
-}
-
-.remove {
-  background-color: crimson;
+  margin-right: 10px;
 }
 
 button:hover {
-  opacity: 1;
+  box-shadow: 0 0 10px #03A696;
+}
+
+.todo-list {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #03A696;
+}
+
+.todo {
+  color: #3BD9BC;
+  background-color: #131425;
+  padding: 1em;
+  margin-bottom: 10px;
+  border: 2px solid #03A696;
+  border-radius: 3px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color transform .2s ease-in-out;
+}
+
+.todo:hover {
+  transition: cubic-bezier( 0.07, 1.40, .80, 1.40) 0.2s;
+  transform: scale(1.01);
+  box-shadow: 0 0 10px #03A696;
+}
+
+.complete {
+  background-color: #3BD9BC;
+}
+
+.remove {
+  background-color: #6C72D9;
 }
 
 .todo-form {
@@ -65,9 +84,35 @@ button:hover {
 }
 
 input, select {
-  padding: 5px;
-  margin-bottom: 10px;
-  border: 1px solid #ddd;
-  border-radius: 3px;
+  background-color: #131425;
+  color: #3BD9BC;
   width: 100%;
+  box-sizing: border-box;
+  font-weight: 600;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 2px solid #03A696;
+  border-radius: 3px;
+}
+
+input:hover {
+  box-shadow: 0 0 10px #03A696;
+}
+
+select:hover {
+  box-shadow: 0 0 10px #03A696;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: 0 0 10px #03A696;
+}
+
+input::placeholder {
+  color: #3BD9BC;
+}
+
+select:focus {
+  outline: none;
+  box-shadow: 0 0 10px #03A696;
 }
