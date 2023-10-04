@@ -5,7 +5,7 @@ body {
   padding: 1em;
 }
 
-.app {
+.main {
   max-width: 600px;
   margin: 0 auto 300px;
   background-color: #131425;
@@ -152,4 +152,39 @@ select:focus {
   display: flex;
   flex-direction: column;
   margin-bottom: 0px;
+}
+
+footer {
+  background-color: none;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+}
+
+footer a {
+  color: #03A696;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #3BD9BC;
+  cursor: pointer;
+}
+
+footer img {
+  filter: invert();
+  cursor: pointer;
+  transition: all 0.3 ease-in-out;
+  width: 26px;
+}
+
+footer img:hover {
+  animation: gelatine 0.5s infinite;
+}
+
+@keyframes gelatine {
+  from, to { transform: scale(1, 1); }
+  25% { transform: scale(0.9, 1.1); }
+  50% { transform: scale(1.1, 0.9); }
+  75% { transform: scale(0.95, 1.05); }
 }
