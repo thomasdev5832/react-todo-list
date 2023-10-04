@@ -2,26 +2,27 @@ body {
   font-family: 'Fira Code', monospace;
   background: #131425;
   color: #333;
-  padding: 30px; 
+  padding: 1em;
 }
 
 .app {
   max-width: 600px;
   margin: 0 auto 300px;
   background-color: #131425;
-  padding: 1.5em;
+  padding: 2em 2em 0em 2em;
   border: 2px solid #03A696;
 }
 
 h1 {
   color: #3BD9BC;
-  margin-top: 0px;
+  margin-top: 10px;
+  margin-bottom: 0px;
   text-align: center;
 }
 
 h2 {
   color: #3BD9BC;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 h3 {
@@ -30,7 +31,8 @@ h3 {
 }
 
 p {
-  margin: 10px 0;
+  color: #3BD9BC;
+  margin: 2px 0px;
   font-weight: 600;
 }
 
@@ -44,16 +46,16 @@ button {
   border-radius: 2px;
   cursor: pointer;
   transition: .3s;
-  margin-right: 10px;
+  margin: 3px;
 }
 
 button:hover {
-  box-shadow: 0 0 10px #03A696;
+  box-shadow: 0 0 20px #3BD9BC;
 }
 
 .todo-list {
-  margin-bottom: 20px;
-  padding-bottom: 20px;
+  margin-bottom: -10px;
+  padding-bottom: 10px;
   border-bottom: 2px solid #03A696;
 }
 
@@ -120,4 +122,34 @@ input::placeholder {
 select:focus {
   outline: none;
   box-shadow: 0 0 10px #03A696;
+}
+
+.filter {
+  border-bottom: 2px solid #03A696;
+  margin-bottom: 20px;
+  margin-top: -10px;
+  padding-bottom: 20px;
+}
+
+.filter-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.order {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.status-select{
+  margin-bottom: 0px;
+}
+
+.search {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0px;
 }
