@@ -1,52 +1,51 @@
 body {
   font-family: 'Fira Code', monospace;
-  background: #131425;
-  color: #333;
-  padding: 1em;
+  background : #131425;
+  color      : #333;
+  padding    : 1em;
 }
 
 .main {
-  max-width: 600px;
-  margin: 0 auto 300px;
+  max-width       : 600px;
+  margin          : 0 auto 300px;
   background-color: #131425;
-  padding: 2em 2em 0em 2em;
-  border: 2px solid #03A696;
+  padding         : 2em 2em 0em 2em;
 }
 
 h1 {
-  color: #3BD9BC;
-  margin-top: 10px;
+  color        : #3BD9BC;
+  margin-top   : 10px;
   margin-bottom: 0px;
-  text-align: center;
+  text-align   : center;
 }
 
 h2 {
-  color: #3BD9BC;
+  color        : #3BD9BC;
   margin-bottom: 5px;
 }
 
 h3 {
-  color: #3BD9BC;
+  color        : #3BD9BC;
   margin-bottom: 5px;
 }
 
 p {
-  color: #3BD9BC;
-  margin: 2px 0px;
+  color      : #3BD9BC;
+  margin     : 2px 0px;
   font-weight: 600;
 }
 
 button {
-  font-weight: 600;
+  font-weight     : 600;
   background-color: #3BD9BC;
-  color: #131425;
-  font-weight: 800;
-  padding: 10px 15px;
-  border: none;
-  border-radius: 2px;
-  cursor: pointer;
-  transition: .3s;
-  margin: 3px;
+  color           : #131425;
+  font-weight     : 800;
+  padding         : 10px 15px;
+  border          : none;
+  border-radius   : 2px;
+  cursor          : pointer;
+  transition      : .3s;
+  margin          : 3px;
 }
 
 button:hover {
@@ -54,27 +53,26 @@ button:hover {
 }
 
 .todo-list {
-  margin-bottom: -10px;
+  margin-bottom : -10px;
   padding-bottom: 10px;
-  border-bottom: 2px solid #03A696;
 }
 
 .todo {
-  color: #3BD9BC;
+  color           : #3BD9BC;
   background-color: #131425;
-  padding: 1em;
-  margin-bottom: 10px;
-  border: 2px solid #03A696;
-  border-radius: 3px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  transition: background-color transform .2s ease-in-out;
+  padding         : 1em;
+  margin-bottom   : 10px;
+  border          : 2px solid #03A696;
+  border-radius   : 3px;
+  display         : flex;
+  justify-content : space-between;
+  align-items     : center;
+  transition      : background-color transform .2s ease-in-out;
 }
 
 .todo:hover {
-  transition: cubic-bezier( 0.07, 1.40, .80, 1.40) 0.2s;
-  transform: scale(1.01);
+  transition: cubic-bezier(0.07, 1.40, .80, 1.40) 0.2s;
+  transform : scale(1.01);
   box-shadow: 0 0 10px #03A696;
 }
 
@@ -90,16 +88,17 @@ button:hover {
   padding-bottom: 1.4rem;
 }
 
-input, select {
+input,
+select {
   background-color: #131425;
-  color: #3BD9BC;
-  width: 100%;
-  box-sizing: border-box;
-  font-weight: 600;
-  padding: 10px;
-  margin-bottom: 10px;
-  border: 2px solid #03A696;
-  border-radius: 3px;
+  color           : #3BD9BC;
+  width           : 100%;
+  box-sizing      : border-box;
+  font-weight     : 600;
+  padding         : 10px;
+  margin-bottom   : 10px;
+  border          : 2px solid #03A696;
+  border-radius   : 3px;
 }
 
 input:hover {
@@ -111,7 +110,7 @@ select:hover {
 }
 
 input:focus {
-  outline: none;
+  outline   : none;
   box-shadow: 0 0 10px #03A696;
 }
 
@@ -120,62 +119,61 @@ input::placeholder {
 }
 
 select:focus {
-  outline: none;
+  outline   : none;
   box-shadow: 0 0 10px #03A696;
 }
 
 .filter {
-  border-bottom: 2px solid #03A696;
-  margin-bottom: 20px;
-  margin-top: -10px;
+  margin-bottom : 20px;
+  margin-top    : -10px;
   padding-bottom: 20px;
 }
 
 .filter-options {
-  display: flex;
+  display        : flex;
   justify-content: space-between;
-  align-items: center;
+  align-items    : center;
 }
 
 .order {
-  display: flex;
-  flex-direction: row;
+  display        : flex;
+  flex-direction : row;
   justify-content: space-between;
-  align-items: center;
+  align-items    : center;
 }
 
-.status-select{
+.status-select {
   margin-bottom: 0px;
 }
 
 .search {
-  display: flex;
+  display       : flex;
   flex-direction: column;
-  margin-bottom: 0px;
+  margin-bottom : 0px;
 }
 
 footer {
   background-color: none;
-  color: #fff;
-  text-align: center;
-  width: 100%;
+  color           : #fff;
+  text-align      : center;
+  width           : 100%;
 }
 
 footer a {
-  color: #03A696;
+  color          : #03A696;
   text-decoration: none;
 }
 
 footer a:hover {
-  color: #3BD9BC;
+  color : #3BD9BC;
   cursor: pointer;
 }
 
 footer img {
-  filter: invert();
-  cursor: pointer;
+  filter    : invert();
+  cursor    : pointer;
   transition: all 0.3 ease-in-out;
-  width: 26px;
+  width     : 26px;
 }
 
 footer img:hover {
@@ -183,8 +181,21 @@ footer img:hover {
 }
 
 @keyframes gelatine {
-  from, to { transform: scale(1, 1); }
-  25% { transform: scale(0.9, 1.1); }
-  50% { transform: scale(1.1, 0.9); }
-  75% { transform: scale(0.95, 1.05); }
+
+  from,
+  to {
+    transform: scale(1, 1);
+  }
+
+  25% {
+    transform: scale(0.9, 1.1);
+  }
+
+  50% {
+    transform: scale(1.1, 0.9);
+  }
+
+  75% {
+    transform: scale(0.95, 1.05);
+  }
 }
