@@ -50,10 +50,40 @@ function App() {
     setTasks(filteredTasks);
   };
 
+  // Calcula porcentagem de tarefas concluídas
+  const totalTasks = tasks.length;
+  const completedTasks = tasks.filter(task => task.isCompleted).length;
+  const percentCompleted = totalTasks === 0 ? 0 : Math.round((completedTasks / totalTasks) * 100);
+
   return (
     <div className='app'>
       <div className='main'>
-      <h1>TO-DO LIST</h1>
+      <h1>XLIST</h1>
+      {/* Barra de progresso */}
+      <div style={{ marginTop: '16px', marginBottom: '-20px' }}>
+        <div style={{
+          background: '#03a696d7',
+          borderRadius: '2px',
+          height: '5px',
+          width: '100%',
+          overflow: 'hidden',
+         boxShadow: '0px 0px 5px #03A696'
+        }}>
+          <div style={{
+            background: '#3BD9BC',
+            width: `${percentCompleted}%`,
+            height: '100%',
+            transition: 'width 0.3s',
+          }} />
+        </div>
+        
+        <div style={{ color:'#03A696', textAlign: 'right', fontSize: '12px', marginTop: '10px' }}>
+          {completedTasks} of {totalTasks} tasks completed
+        </div>
+        <div style={{ color:'#03A696', textAlign: 'right', fontSize: '12px', marginTop: '4px' }}>
+          {percentCompleted}% completed
+        </div>
+      </div>
       <Search search={search} setSearch={setSearch} />
       <Filter filter={filter} setFilter={setFilter} setSort={setSort} />
       <div className='todo-list'>
