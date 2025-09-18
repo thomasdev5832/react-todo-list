@@ -1,4 +1,4 @@
-import React from 'react'
+import PropTypes from 'prop-types';
 
 const Todo = ({ todo, removeTodo, completeTodo }) => {
   return (
@@ -8,7 +8,7 @@ const Todo = ({ todo, removeTodo, completeTodo }) => {
           }}>
         <div className='content'>
             <p>{todo.text}</p>
-            <p className='category'>({todo.category})</p>
+            {todo.category && <p className='category'>({todo.category})</p>}
         </div>
         <div>
             <button className='complete' onClick={() => completeTodo(todo.id) } >✓</button>
@@ -17,5 +17,16 @@ const Todo = ({ todo, removeTodo, completeTodo }) => {
     </div>
   )
 }
+
+Todo.propTypes = {
+  todo: PropTypes.shape({
+    id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
+    text: PropTypes.string.isRequired,
+    category: PropTypes.string,
+    isCompleted: PropTypes.bool.isRequired,
+  }).isRequired,
+  removeTodo: PropTypes.func.isRequired,
+  completeTodo: PropTypes.func.isRequired,
+};
 
 export default Todo

@@ -49,7 +49,7 @@ button {
 }
 
 button:hover {
-  box-shadow: 0 0 20px #3BD9BC;
+  box-shadow: 0 0 5px #3BD9BC;
 }
 
 .todo-list {
@@ -67,13 +67,11 @@ button:hover {
   display         : flex;
   justify-content : space-between;
   align-items     : center;
-  transition      : background-color transform .2s ease-in-out;
 }
 
 .todo:hover {
   transition: cubic-bezier(0.07, 1.40, .80, 1.40) 0.2s;
-  transform : scale(1.01);
-  box-shadow: 0 0 10px #03A696;
+  box-shadow: 0 0 5px #03A696;
 }
 
 .complete {
@@ -102,16 +100,16 @@ select {
 }
 
 input:hover {
-  box-shadow: 0 0 10px #03A696;
+  box-shadow: 0 0 5px #03A696;
 }
 
 select:hover {
-  box-shadow: 0 0 10px #03A696;
+  box-shadow: 0 0 5px #03A696;
 }
 
 input:focus {
   outline   : none;
-  box-shadow: 0 0 10px #03A696;
+  box-shadow: 0 0 5px #03A696;
 }
 
 input::placeholder {
@@ -120,7 +118,7 @@ input::placeholder {
 
 select:focus {
   outline   : none;
-  box-shadow: 0 0 10px #03A696;
+  box-shadow: 0 0 5px #03A696;
 }
 
 .filter {
